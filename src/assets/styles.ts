@@ -1,6 +1,6 @@
 import { appColors } from './colors';
 import { StyleSheet } from "react-native";
-import { HEIGHT } from './screen'
+import { HEIGHT, FONT } from './screen'
 
 export const appStyles = StyleSheet.create({
     container: {
@@ -8,23 +8,23 @@ export const appStyles = StyleSheet.create({
         backgroundColor: appColors.background,
     },
     label: {
-        fontSize: HEIGHT(16),
+        fontSize: FONT(16),
         color: 'white'
     },
     blueLabel: {
-        fontSize: HEIGHT(16),
+        fontSize: FONT(16),
         color: appColors.blue
     },
     greyText: {
-        fontSize: HEIGHT(14),
+        fontSize: FONT(14),
         color: appColors.grey
     },
     topTabLable: {
-        fontSize: HEIGHT(16),
+        fontSize: FONT(16),
         textTransform: 'none',
     },
     panelLabel: {
-        fontSize: HEIGHT(20),
+        fontSize: FONT(20),
         color: 'white'
     }
 })

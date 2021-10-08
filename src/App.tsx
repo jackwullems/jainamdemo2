@@ -81,6 +81,7 @@ const Root = () => {
 					
 				}}
 				fullWidth={true}
+				closeOnTouchOutside={true}
 				onClose={()=>setIsPanelActive(false)}
 				isActive={isPanelActive}
 			>
@@ -89,35 +90,35 @@ const Root = () => {
 						onPress={handlePanel}
 						style={{flexDirection: 'row', marginVertical: HEIGHT(10), alignItems: 'center'}}>
 						<MaterialIcons name='event' size={HEIGHT(20)} color='white'/>
-						<Text style={[appStyles.panelLabel, {marginStart: WIDTH(8)}]}>
+						<Text style={[appStyles.label, {marginStart: WIDTH(8)}]}>
 							Start New Event Now</Text>
 					</Pressable>
 					<Pressable
 						onPress={handlePanel}
 						style={{flexDirection: 'row', marginVertical: HEIGHT(10), alignItems: 'center'}}>
 						<MaterialIcons name='add-circle-outline' size={HEIGHT(20)} color='white'/>
-						<Text style={[appStyles.panelLabel, {marginStart: WIDTH(8)}]}>
+						<Text style={[appStyles.label, {marginStart: WIDTH(8)}]}>
 							Schedule New Event</Text>
 					</Pressable>
 					<Pressable
 						onPress={handlePanel}
 						style={{flexDirection: 'row', marginVertical: HEIGHT(10), alignItems: 'center'}}>
 						<MaterialIcons name='airplay' size={HEIGHT(20)} color='white'/>
-						<Text style={[appStyles.panelLabel, {marginStart: WIDTH(8)}]}>
+						<Text style={[appStyles.label, {marginStart: WIDTH(8)}]}>
 							Host Watch Party</Text>
 					</Pressable>
 					<Pressable
 						onPress={handlePanel}
 						style={{flexDirection: 'row', marginVertical: HEIGHT(10), alignItems: 'center'}}>
 						<MaterialIcons name='call-to-action' size={HEIGHT(20)} color='white'/>
-						<Text style={[appStyles.panelLabel, {marginStart: WIDTH(8)}]}>
+						<Text style={[appStyles.label, {marginStart: WIDTH(8)}]}>
 							Host Conference</Text>
 					</Pressable>
 					<Pressable
 						onPress={handlePanel}
 						style={{flexDirection: 'row', marginVertical: HEIGHT(10), alignItems: 'center'}}>
 						<MaterialIcons name='event-available' size={HEIGHT(20)} color='white'/>
-						<Text style={[appStyles.panelLabel, {marginStart: WIDTH(8)}]}>
+						<Text style={[appStyles.label, {marginStart: WIDTH(8)}]}>
 							Join New Event</Text>
 					</Pressable>
 				</View>

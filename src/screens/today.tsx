@@ -23,7 +23,6 @@ const EventList = ({events}: EventListProps) => {
     )
 }
 const InvitationList = ({events}: EventListProps) => {
-    console.log('events:', events)
     return (
         <View style={appStyles.container}>
             <FlatList
